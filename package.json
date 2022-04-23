@@ -1,5 +1,5 @@
 {
-  "name": "node-sequelize",
+  "name": "car-ranking-brasil",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,6 +7,7 @@
     "start": "nodemon node src/index.js"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.1",
     "pg": "^8.0.2",
     "sequelize": "^5.21.6"

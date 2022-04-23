@@ -2,14 +2,14 @@ const {Router} = require('express');
 
 const routes = new Router();
 
-const UserController = require('./app/Controllers/UserController');
+const RankingController = require('./app/Controllers/RankingController');
 
-
-routes.post('/users', UserController.store);
-routes.get('/users', UserController.index);
+routes.get('/ranking', RankingController.buscarTodos);
+routes.get('/ranking/:ano', RankingController.buscarPorAno);
+routes.get('/ranking/:ano/:mes', RankingController.buscarPorAnoEMes);
 
 routes.get('/', (req, res) =>{
-  res.json({message: 'hello world'})
+  res.json({message: 'Olá'})
 })
 
 module.exports = routes;
